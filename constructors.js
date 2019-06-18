@@ -15,7 +15,10 @@
 */
 
 // Code here
-
+function CarFactory(make, model){
+  this.make = make,
+  this.model = model
+}
 ////////// PROBLEM 2 //////////
 
 // Do not edit the code below.
@@ -34,6 +37,8 @@ function Employee(name, email, hireDate) {
 */
 
 // Code here
+const bob = new Employee('Bob', 'bob@gmail.com', '01-02-98')
+
 
 ////////// PROBLEM 3 //////////
 
@@ -57,7 +62,16 @@ mustang.moveCar(); // Increments mustang' move property by 10. Returns the new m
 */
 
 // Code here
-
+function Car(make, model, year){
+  this.make = make,
+  this.model = model,
+  this.year = year,
+  this.move = 0
+  this.moveCar = () => {
+  return this.move += 10
+  }
+  
+}
 ////////// PROBLEM 4 //////////
 
 /*
