@@ -23,13 +23,13 @@ function outer() {
 */
   
 // Code Here
-
+inner = outer()
 
 
 //Once you do that, invoke inner.
 
 //Code Here
-
+inner()
 
 
 ////////// PROBLEM 2 //////////
@@ -52,7 +52,9 @@ function callFriend(name) {
 */
 
 //Code Here
+callJake = callFriend('Jake')
 
+callJake('435-555-9248')
 
 
 ////////// PROBLEM 3 //////////
