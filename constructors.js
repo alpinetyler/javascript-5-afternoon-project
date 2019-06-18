@@ -90,7 +90,10 @@ function Movie(name, genre, rating) {
 }
 
 // Code here
-
+Movie.prototype.changeRating = function(num){
+  return this.rating = ((num + this.rating)/2)
+  
+ }
 ////////// PROBLEM 5 //////////
 
 // Write a constructor function called User. This function should take in 4 parameters called name, age, email, and savedPosts in that order. Name and email will be strings, age will be a number and savedPosts will be an array of objects. These objects will each have 3 properties: id (a number), title (a string), and rating (a number between 1 and 5). These objects are the posts that the user will have saved to their account.
