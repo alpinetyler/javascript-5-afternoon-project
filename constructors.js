@@ -132,5 +132,8 @@ User.prototype.removeSavedPost = function(id){
 
 //Code here
 User.prototype.changePostRating = function(id, num){
-
+  let postID = this.savedPosts.findIndex((element) => {
+    return element.id === id
+  })
+  this.savedPosts[postID].rating = num
 }
